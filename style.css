@@ -1,5 +1,5 @@
 body {
-    background-color: lightsteelblue;
+    background-color: skyblue;
     margin: margin-left:5px;
     align-content: left;
     text-align: left;
@@ -11,10 +11,12 @@ iframe{
 }
 div div {
     text-align: center;
-    margin: auto;
+    margin:	auto;
+	word-break: normal;
 }
 a{
-    float: center;
+    float: left;
+    margin-left: 20px;
     color: red;
 	text-shadow: 1px 1px 1px black;
     margin-top: 5px;
@@ -27,4 +29,16 @@ a{
     vertical-align: top;
     float: left;
     background-color:floralwhite;
+}
+.mid{
+    text-align: center;
+    width: 600px;
+	margin-left: auto;
+    margin-right: auto;
+    background-color: floralwhite;
+}
+th, tr, td {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
 }
