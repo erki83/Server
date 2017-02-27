@@ -14,22 +14,17 @@ div div {
     margin: auto;
 }
 a{
-    float: left;
-    text-shadow: 2px 2px 2px blue;
+    float: center;
+    color: red;
+	text-shadow: 1px 1px 1px black;
     margin-top: 5px;
 }
 .link{
     display: inline-block;
-    height: 800px;
+    text-align: center;
+	height: 800px;
     width: 250px;
     vertical-align: top;
     float: left;
     background-color:floralwhite;
-    ;
-}
-a:hover{
-    text-shadow: 2px 2px 2px crimson;
-}
-a:active { 
-    text-shadow: 2px 2px 2px black;
 }
