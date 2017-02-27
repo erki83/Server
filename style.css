@@ -1,24 +1,35 @@
 body {
     background-color: lightsteelblue;
-    margin: auto;
-    align-content: center;
-    text-align: center;
+    margin: margin-left:5px;
+    align-content: left;
+    text-align: left;
 }
 iframe{
     height: 800px;
-    width: 1000px;
-    margin-left: -250px;
+    width: 1100px;
+    margin-right: -250px;
 }
 div div {
-    text-align: left;
+    text-align: center;
     margin: auto;
+}
+a{
+    float: left;
+    text-shadow: 2px 2px 2px blue;
+    margin-top: 5px;
 }
 .link{
     display: inline-block;
-    height: 700px;
+    height: 800px;
     width: 250px;
     vertical-align: top;
     float: left;
     background-color:floralwhite;
-    margin-left: 100px;
+    ;
+}
+a:hover{
+    text-shadow: 2px 2px 2px crimson;
+}
+a:active { 
+    text-shadow: 2px 2px 2px black;
 }
