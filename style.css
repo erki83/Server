@@ -1,0 +1,24 @@
+body {
+    background-color: lightsteelblue;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+iframe{
+    height: 800px;
+    width: 1000px;
+    margin-left: -250px;
+}
+div div {
+    text-align: left;
+    margin: auto;
+}
+.link{
+    display: inline-block;
+    height: 700px;
+    width: 250px;
+    vertical-align: top;
+    float: left;
+    background-color:floralwhite;
+    margin-left: 100px;
+}
