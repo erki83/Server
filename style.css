@@ -1,15 +1,14 @@
 body {
     background-color: royalblue;
-    margin: margin-left:5px;
+    margin-left:5px;
     align-content: left;
     text-align: left;
 	word-break: normal;
 }
-.h1 { 
-    display: block;
-    font-size: 3em;
-    margin-top: 0.80em;
-    margin-bottom: 0.67em;
+h1 { 
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -47,4 +46,19 @@ th, tr, td {
     border: 2px solid black;
     width: 150px;
     height: 100px;
+}
+img {
+	float: left;
+	margin:20px 40px 10px 0;
+	height:300px;
+	width:300px;
+}
+.right {
+    right: 0px;
+    width: 1100px;
+    padding: 0;
+}
+.right img {
+	height:100%;
+	width:100%;
 }
