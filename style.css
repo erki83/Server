@@ -1,9 +1,8 @@
 body {
-    background-color: royalblue;
+    background-color: lightblue;
     margin-left:5px;
     align-content: left;
     text-align: left;
-	word-break: normal;
 }
 h1 { 
     font-size: 2em;
@@ -13,20 +12,21 @@ h1 {
     margin-right: 0;
     font-weight: bold;
 	text-decoration: underline;
+	text-shadow: 1px 1px 1px white;
 }
 iframe{
     height: 800px;
     width: 1100px;
-    margin-right: -250px;
+    margin-right: 190px;
 }
 form {
 	text-align: left;
-    width: 200px;
+    width: 400px;
     margin-left: 0;
     margin-right: auto;
-    background-color: skyblue;
+    background-color: lightblue;
 }	
-a{
+a {
     display: block;
 	color: blue;
 	text-shadow: 1px 1px 1px black;
@@ -38,12 +38,8 @@ a{
 	height: 800px;
     width: 250px;
     vertical-align: top;
-    float: auto;
+    float: left;
     background-color:floralwhite;
-}
-.link a {
-	display:block;
-	color:red;
 }
 .mid{
     text-align: center;
@@ -51,11 +47,29 @@ a{
 	margin-left: auto;
     margin-right: auto;
     background-color: floralwhite;
+	border: 2px solid black;
 }
-th, tr, td {
-    border: 2px solid black;
+.mid th{
+    height: 100px;	
+    border:1px solid black
+}
+.mid tr{
+    height: 100px;	
+    border:1px solid black
+}
+.mid td{
     width: 150px;
-    height: 100px;
+	border:1px solid black
+}
+.mid caption{
+	border:1px solid black
+}
+table {
+	border-collapse:collapse;
+}
+th, td, tr {
+    width: 100px;
+    height: 20px;
 }
 img {
 	float: left;
@@ -72,4 +86,10 @@ img {
 .right img {
 	height:31px;
 	width:88px;
+}
+.right a {
+	display: block;
+	color: red;
+	text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
 }

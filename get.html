@@ -5,17 +5,40 @@
 <title>GET meetod</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	<body>
-        <div class="form">
-			<form action="get.html" method="get">
-				<input type="text" name="user" placeholder="Kasutajanimi"><br>
-                <input type="password" name="password" placeholder="Parool"><br>
-                <input type="email" name="mail" placeholder="Email"><br>
-                <input type="number" name="age" placeholder="Vanus"><br>
-                <input type="date" name="born" placeholder="Sündinud"><br>
-                <label for="marriage"><input type="checkbox" id="marriage" name="married" value="No" checked>Abielus</label><br>
-                <button type="submit">Sisesta</button>
-			</form>
-        </div>
-    </body>
+<body>
+	<form action="get.html" method="get">
+		<table>
+			<tr>
+				<td>Kasutajanimi:</td>
+				<td><input type="text" name="user" placeholder="Kasutajanimi"></td>
+            </tr>
+			<tr>
+				<td>Parool:</td>
+				<td><input type="password" name="password" placeholder="Parool"></td>
+            </tr>
+            <tr>
+				<td>Meiliaadress:</td>
+				<td><input type="email" name="mail" placeholder="Email"></td>
+            </tr>
+			<tr>
+				<td>Vanus:</td>
+				<td><input type="number" name="age" placeholder="Vanus"></td>
+            </tr>
+			<tr>
+				<td>Sugu:</td>
+				<td><input type="radio" name="gender" value="mees" checked> Mees<br><input type="radio" name="gender" value="naine"> Naine<br><input type="radio" name="gender" value="muu"> Muu</td>
+			</tr>
+            <tr>
+				<td>Tänane kuupäev:</td>
+				<td><input type="date" name="date" placeholder="Kuupäev"></td>
+            </tr>
+            <tr>
+				<td><label for="marriage"><input type="checkbox" id="marriage" name="married" value="No" checked>Abielus</label></td>
+				<td></td>
+            </tr>
+		</table><br>
+        <button type="submit">Sisesta</button>
+		        
+	</form>
+</body>
 </html>
