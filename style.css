@@ -80,6 +80,7 @@ th, td, tr {
 	display:block;
 	border-radius:25px
 }
+.right img:hover {box-shadow: 2px 2px 2px 2px white}
 .right {
     right: 0px;
     width: 1050px;
@@ -93,6 +94,7 @@ th, td, tr {
 	text-shadow: 1px 1px 1px black;
     margin-top: 10px;
 	}
+.right a:hover {text-shadow: 2px 2px 2px white;}
 #üks {color:green;}
 #kaks {text-decoration:underline;}
 #kolm {background-color:DarkOliveGreen;}
