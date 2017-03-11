@@ -1,4 +1,75 @@
 body {
     background-color: #0A24A9;
-    
+}
+img {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+}
+#rõngas{
+	height:200px;
+	width:200px;
+	position:fixed;
+	top:40%;
+	left:40%;
+}
+.rõngas:nth-child(1){
+	height:100%;
+	width:100%;
+	background:white;
+	border-radius:50%;
+	position:absolute;
+	border:2px solid grey;
+}
+.rõngas:nth-child(2){
+	height:90%;
+	width:90%;
+	background:red;
+	border-radius:50%;
+	position:absolute;
+	left:5%;
+	top:5%;
+	border:1px solid grey;
+}
+.rõngas:nth-child(3){
+	height:70%;
+	width:70%;
+	background:white;
+	border-radius:50%;
+	position:absolute;
+	left:15%;
+	top:15%;
+	border:2px solid grey;
+}
+.rõngas:nth-child(4){
+	height:50%;
+	width:50%;
+	background:red;
+	border-radius:50%;
+	position:absolute;
+	left:25%;
+	top:25%;
+	border:1px solid grey;
+}
+.rõngas:nth-child(5){
+	height:30%;
+	width:30%;
+	background:white;
+	border-radius:50%;
+	position:absolute;
+	left:35%;
+	top:35%;
+	border:2px solid grey;
+}
+.rõngas:nth-child(6){
+	height:10%;
+	width:10%;
+	background:red;
+	border-radius:50%;
+	position:absolute;
+	left:45%;
+	top:45%;
+	border:1px solid grey;
+}    
    
