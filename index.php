@@ -16,10 +16,11 @@
 		<a href="css-bot.html" target="frame">Robot</a>
 		<a href="stiilid.html" target="frame">CSS stiilid</a>
 		<a href="target.html" target="frame">Sihtmärk</a>
+		<a href="abakus.html" target="frame">Arvutuslaud</a>
 		<a href="lisand.php" target="frame">Link PHP faili</a>
         <a id="demo"></p>
 
-    </div>
+	</div>
 	
 	<iframe name="frame">
     </iframe>
