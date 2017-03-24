@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <script type="text/javascript" src="java.js"></script>
 </head>
-<body>
+<body onload="setInterval(startTime, 500);">
     <div class="link">
         <a href="esimene.html" target="frame">Esimene Ülesanne</a>
 		<a href="tabel1.html" target="frame">Esimene tabel</a>
@@ -18,7 +18,7 @@
 		<a href="target.html" target="frame">Sihtmärk</a>
 		<a href="abakus.html" target="frame">Arvutuslaud</a>
 		<a href="lisand.php" target="frame">Link PHP faili</a>
-        <a id="demo"></p>
+        <p id="kell"></p>
 
 	</div>
 	
