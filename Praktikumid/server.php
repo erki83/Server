@@ -1,5 +1,8 @@
 <?php
-        $host = "localhost";
+        error_reporting(E_ALL);
+		ini_set('display_errors', 1);
+		
+		$host = "localhost";
         $user = "test";
         $pass = "t3st3r123";
         $db = "test";
@@ -9,5 +12,4 @@
             die("Error, ei saa andmebaasi charsetti seatud");
 
         mysqli_close($l);
-        echo phpversion();
     ?>

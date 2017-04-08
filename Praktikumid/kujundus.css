@@ -1,0 +1,9 @@
+body{
+	background:#0A24A9;
+}	
+img {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width:100%;
+}
