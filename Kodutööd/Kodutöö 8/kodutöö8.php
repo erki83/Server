@@ -9,12 +9,17 @@
 		if (isset($_POST['bg_color'])  && $_POST['bg_color']!="") {
 			$bg_col=htmlspecialchars($_POST['bg_color']);
 		} 
+		$txt_col="#000"; // vaikimisi must
 		if (isset($_POST['text_color'])  && $_POST['text_color']!="") {
 			$txt_col=htmlspecialchars($_POST['text_color']);
 		}
 		$border="0"; // vaikimisi 0 pikslit
 		if (isset($_POST['paksus'])  && $_POST['paksus']!="") {
 			$border=htmlspecialchars($_POST['paksus']);
+		}
+		$brd_color="#000"; // vaikimisi must
+		if (isset($_POST['bord_color'])  && $_POST['bord_color']!="") {
+			$brd_color=htmlspecialchars($_POST['bord_color']);
 		}
 		$brd_stiil="solid"; //vaikimisi solid stiilis border
 		if (isset($_POST['bstiil'])  && $_POST['bstiil']!="") {
@@ -34,14 +39,16 @@
 			border-color: <?php echo $brd_color; ?>;
 			border-style: <?php echo $brd_stiil; ?>;
 			border-radius: <?php echo $b_raadius; ?>px;
-			margin-bottom: 25px;	
+			margin-bottom: 25px;
+			
 		}
 		.blokk p{
 			color: <?php echo $txt_col; ?>;
 			margin-left: 10px;
+			word-wrap: break-word;
 		}
-		div{
-			border-top: 2px solid black
+		.sisestus{
+			border: 6px solid black
 			margin-top: 25px;
 		}
 	</style>
@@ -53,22 +60,22 @@
 	echo "<p>".$_POST['tekst']."</p>"; 
 	} ?></p>
 	</div>
-	<div>
+	<div class="sisestus">
         <form action="kodutöö8.php" method="POST">
-			<textarea name="tekst"></textarea><br>
+			<textarea name="tekst" placeholder="<?php echo $_POST['tekst'];?>"></textarea><br>
 			<input type="color" name="bg_color" value="<?php echo $_POST['bg_color'];?>"></input>Taustavärvus<br>
-			<input type="color" name="text_color"></input>Tekstivärvus<br>
+			<input type="color" name="text_color" value="<?php echo $_POST['text_color'];?>"></input>Tekstivärvus<br>
 			Piirjoon:</br>
-				<input type="number" name="paksus" min="0" max="20"></input>Joone paksus (0-20 px)<br>
-				<input type="color" name="bord_color"></input>Joone värvus<br>
+				<input type="number" name="paksus" min="0" max="20" value="<?php echo $_POST['paksus'];?>"></input>Joone paksus (0-20 px)<br>
+				<input type="color" name="bord_color" value="<?php echo $_POST['bord_color'];?>"></input>Joone värvus<br>
 				<input list="stiilid" name="bstiil">
-					<datalist id="stiilid">
+					<datalist id="stiilid" >
 						<option value="solid">
 						<option value="dotted">
 						<option value="dashed">
 						<option value="double">
 					</datalist><br>
-				<input type="number" name="raadius" min="0" max="100"></input>Joone raadius (0-100 px)<br>
+				<input type="number" name="raadius" min="0" max="100" value="<?php echo $_POST['raadius'];?>"></input>Joone raadius (0-100 px)<br>
 				<input type="submit" value="Sisesta"/>
 		</form>
     </div>
