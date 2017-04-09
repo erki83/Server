@@ -9,7 +9,6 @@
 		if (isset($_POST['bg_color'])  && $_POST['bg_color']!="") {
 			$bg_col=htmlspecialchars($_POST['bg_color']);
 		} 
-		$txt_col="#000"; // vaikimisi must
 		if (isset($_POST['text_color'])  && $_POST['text_color']!="") {
 			$txt_col=htmlspecialchars($_POST['text_color']);
 		}
@@ -17,19 +16,34 @@
 		if (isset($_POST['paksus'])  && $_POST['paksus']!="") {
 			$border=htmlspecialchars($_POST['paksus']);
 		}
+		$brd_stiil="solid"; //vaikimisi solid stiilis border
+		if (isset($_POST['bstiil'])  && $_POST['bstiil']!="") {
+			$brd_stiil=htmlspecialchars($_POST['bstiil']);
+		}
+		$b_raadius="0"; //vaikimisi raadius puudub
+		if (isset($_POST['raadius'])  && $_POST['raadius']!="") {
+			$b_raadius=htmlspecialchars($_POST['raadius']);
+		}
 	?>
 	<style type="text/css">
 		.blokk {
 			background: <?php echo $bg_col; ?>; 
 			width:400px;
 			height:250px;
-			border: <?php echo $bg_col; ?>px;
-			display: inline-block;
-			
+			border-width: <?php echo $border; ?>px;
+			border-color: <?php echo $brd_color; ?>;
+			border-style: <?php echo $brd_stiil; ?>;
+			border-radius: <?php echo $b_raadius; ?>px;
+			margin-bottom: 25px;	
 		}
 		.blokk p{
 			color: <?php echo $txt_col; ?>;
-		} 
+			margin-left: 10px;
+		}
+		div{
+			border-top: 2px solid black
+			margin-top: 25px;
+		}
 	</style>
 	
 </head>
@@ -42,20 +56,19 @@
 	<div>
         <form action="kodutöö8.php" method="POST">
 			<textarea name="tekst"></textarea><br>
-			<select name="bg_color">
-                    <option value="#008000">Roheline</option>
-                    <option value="#0000ff">Sinine</option>
-                    <option value="#000000">Must</option>
-                    <option value="#ff0000">Punane</option>
-            </select>Taustavärvus<br>
-			<select name="text_color">
-                    <option value="#000000">Must</option>
-                    <option value="#ffff00">Kollane</option>
-                    <option value="#0000ff">Sinine</option>
-                    <option value="#ffffff">Valge</option>
-            </select>Tekstivärvus<br>
+			<input type="color" name="bg_color" value="<?php echo $_POST['bg_color'];?>"></input>Taustavärvus<br>
+			<input type="color" name="text_color"></input>Tekstivärvus<br>
 			Piirjoon:</br>
 				<input type="number" name="paksus" min="0" max="20"></input>Joone paksus (0-20 px)<br>
+				<input type="color" name="bord_color"></input>Joone värvus<br>
+				<input list="stiilid" name="bstiil">
+					<datalist id="stiilid">
+						<option value="solid">
+						<option value="dotted">
+						<option value="dashed">
+						<option value="double">
+					</datalist><br>
+				<input type="number" name="raadius" min="0" max="100"></input>Joone raadius (0-100 px)<br>
 				<input type="submit" value="Sisesta"/>
 		</form>
     </div>
